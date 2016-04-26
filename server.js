@@ -5,8 +5,8 @@ function serve(build, dir, port) {
     var server = new express();
     
     server.listen(port, function() {
-        server.use('/path', express.static(__dirname + dir));
-        console.log('Serving ' + build + ' at http://localhost:' + port + '/path');
+        server.use(express.static(__dirname + dir));
+        console.log('Serving ' + build + ' at http://localhost:' + port);
     });
 
 }
