@@ -20,7 +20,6 @@
 
 #section-portfolio {
     background: $white;
-    height: 200px;
     padding: 60px 0;
     blockquote {
         color: $red;
@@ -30,12 +29,6 @@
         @extend %center-block;
         #quote {
             text-align: justify;
-        }
-        #cite {
-            display: inline-block;
-            width: 90%;
-            text-align: right;
-            font-size: 0.8em;
         }
         .quote {
             width: 40px;
@@ -63,8 +56,61 @@
         border-radius: 50%;
         cursor: pointer;
         box-shadow: 0 0 0 1px $gray;
+        transition: all .3s ease;
         &.is-active {
             background: $gray;
         }
     }
+}
+
+cite {
+    display: inline-block;
+    width: 90%;
+    text-align: right;
+    font-size: 0.8em;
+}
+
+.portfolio-images {
+    margin-top: 30px;
+    width: (250*3)*1px;
+    @extend %center-block;
+    position: relative;
+}
+
+.section-title {
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+    color: $white;
+    background: rgba($red, 0.8);
+    height: 50px;
+    h2 {
+        margin: 0;
+        padding-top: 5px;
+    }
+}
+
+
+/* About section */
+
+#section-about {
+    padding: 60px 0;
+    background: url(../img/bg-about.png) center / cover no-repeat;
+    blockquote {
+        width: 400px;
+        @extend %center-block;
+        text-align: justify;
+        color: $white;
+    }
+}
+
+#section-services {
+    background: $white;
+    padding: 60px 0;
+}
+
+.services-images {
+    width: (250*3)*1px;
+    @extend %center-block;
+    position: relative;
 }
