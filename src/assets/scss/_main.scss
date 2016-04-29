@@ -130,12 +130,38 @@ cite {
 
 #section-about {
     padding: 60px 0;
-    background: url(../img/bg-about.png) center / cover no-repeat;
     blockquote {
         width: 400px;
         @extend %center-block;
         text-align: justify;
+        &:hover {
+            .text-more {
+                opacity: 1;
+                left: 0;
+            }
+        }
     }
+}
+
+.text-more {
+    opacity: 0;
+    position: relative;
+    left: -100px;
+    transition: .3s opacity ease, .3s left ease;
+    text-align: center;
+    height: 0;
+}
+
+.bg-parallax {
+    position: fixed;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/bg-about.png) center / cover no-repeat;
 }
 
 
