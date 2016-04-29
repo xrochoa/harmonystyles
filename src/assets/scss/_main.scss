@@ -72,9 +72,40 @@ cite {
 
 .portfolio-images {
     margin-top: 30px;
-    width: (250*3)*1px;
+    width: (240*3)*1px;
     @extend %center-block;
     position: relative;
+    &:hover {
+        .img-portfolio {
+            background-position: -10px -10px;
+            opacity: 0.5;
+        }
+        .section-title {
+            bottom: 0;
+            height: 100%;
+            h2 {
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+.img-portfolio {
+    width: 240px;
+    height: 550px;
+    transition: .3s background-position ease, .3s opacity ease;
+}
+
+.img-portfolio-1 {
+    background: url(../img/portfolio1.png);
+}
+
+.img-portfolio-2 {
+    background: url(../img/portfolio2.png);
+}
+
+.img-portfolio-3 {
+    background: url(../img/portfolio3.png);
 }
 
 .section-title {
@@ -83,9 +114,14 @@ cite {
     bottom: 10%;
     background: rgba($red, 0.8);
     height: 50px;
+    transition: .3s bottom ease, .3s height ease;
     h2 {
+        position: absolute;
         margin: 0;
-        padding-top: 5px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s font-size ease;
     }
 }
 
@@ -102,13 +138,47 @@ cite {
     }
 }
 
+
+/* Services section */
+
 #section-services {
     background: $white;
     padding: 60px 0;
 }
 
+.img-services {
+    width: 240px;
+    height: 240px;
+    transition: .3s background-position ease, .3s opacity ease;
+}
+
+.img-services-1 {
+    background: url(../img/services1.png);
+}
+
+.img-services-2 {
+    background: url(../img/services2.png);
+}
+
+.img-services-3 {
+    background: url(../img/services3.png);
+}
+
 .services-images {
-    width: (250*3)*1px;
+    width: (240*3)*1px;
     @extend %center-block;
     position: relative;
+    &:hover {
+        .img-services {
+            background-position: -10px -10px;
+            opacity: 0.5;
+        }
+        .section-title {
+            bottom: 0;
+            height: 100%;
+            h2 {
+                font-size: 2em;
+            }
+        }
+    }
 }
