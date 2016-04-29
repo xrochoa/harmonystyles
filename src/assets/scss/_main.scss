@@ -1,0 +1,70 @@
+/* Header section */
+
+#section-header {
+    background: url(../img/cover.png) center top / contain no-repeat, $black;
+    border-top: solid 20px $black;
+    height: 600px;
+    position: relative;
+}
+
+.img-logo {
+    width: 400px;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-130%);
+}
+
+
+/* Portfolio section */
+
+#section-portfolio {
+    background: $white;
+    height: 200px;
+    padding: 60px 0;
+    blockquote {
+        color: $red;
+        position: relative;
+        width: 400px;
+        height: 100px;
+        @extend %center-block;
+        #quote {
+            text-align: justify;
+        }
+        #cite {
+            display: inline-block;
+            width: 90%;
+            text-align: right;
+            font-size: 0.8em;
+        }
+        .quote {
+            width: 40px;
+            position: absolute;
+        }
+        .quote1 {
+            left: -60px;
+            top: -30px;
+        }
+        .quote2 {
+            right: -60px;
+            transform: rotate(180deg) translateY(20px);
+        }
+    }
+    .selector-group {
+        width: 300px;
+        margin-top: 30px;
+        @extend %center-block;
+    }
+    .selector {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin: 0 5px;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 0 0 1px $gray;
+        &.is-active {
+            background: $gray;
+        }
+    }
+}
