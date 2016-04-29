@@ -1,3 +1,25 @@
 #site-nav {
-	position: fixed;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    .container {
+        position: relative;
+    }
+    .nav-container {
+        position: absolute;
+        right: 0;
+        width: 400px;
+    }
+    .nav-links {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        a {
+            padding: 0 10px;
+            transition: .3s color ease;
+            &:hover {
+                color: $red;
+            }
+        }
+    }
 }
