@@ -81,7 +81,6 @@ cite {
     width: 100%;
     position: absolute;
     bottom: 10%;
-    color: $white;
     background: rgba($red, 0.8);
     height: 50px;
     h2 {
@@ -100,7 +99,6 @@ cite {
         width: 400px;
         @extend %center-block;
         text-align: justify;
-        color: $white;
     }
 }
 

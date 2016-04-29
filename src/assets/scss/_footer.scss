@@ -1,0 +1,15 @@
+#site-footer {
+    background: $black;
+    padding: 20px 0 10px;
+    a {
+        &:hover .icon {
+            box-shadow: 0 0 0 3px $white;
+        }
+    }
+    span {
+        vertical-align: 0.5em;
+    }
+    .legal {
+    	margin-top: 20px;
+    }
+}

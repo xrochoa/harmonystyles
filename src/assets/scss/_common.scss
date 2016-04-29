@@ -1,0 +1,17 @@
+//text link
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+.icon {
+    width: 30px;
+    margin: 0 10px;
+    background: $gray;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: box-shadow .3s ease;
+    &:hover {
+        box-shadow: 0 0 0 3px $white;
+    }
+}
