@@ -26,23 +26,24 @@
         color: $red;
         position: relative;
         width: 400px;
+        max-width: 90%;
         height: 100px;
         @extend %center-block;
-        #quote {
-            text-align: justify;
-        }
-        .quote {
-            width: 40px;
-            position: absolute;
-        }
-        .quote1 {
-            left: -60px;
-            top: -30px;
-        }
-        .quote2 {
-            right: -60px;
-            transform: rotate(180deg) translateY(20px);
-        }
+    }
+    #quote {
+        text-align: justify;
+    }
+    .quote {
+        width: 40px;
+        position: absolute;
+    }
+    .quote1 {
+        left: -60px;
+        top: -30px;
+    }
+    .quote2 {
+        right: -60px;
+        transform: rotate(180deg) translateY(20px);
     }
     .selector-group {
         width: 300px;
@@ -133,6 +134,7 @@ cite {
     padding: 60px 0;
     blockquote {
         width: 400px;
+        max-width: 100%;
         @extend %center-block;
         text-align: justify;
         &:hover {
