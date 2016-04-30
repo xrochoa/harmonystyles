@@ -13,6 +13,7 @@
     bottom: 25px;
     left: 50%;
     transform: translateX(-130%);
+    transition: .3s width ease, .3s transform ease;
 }
 
 

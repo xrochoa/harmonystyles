@@ -1,5 +1,5 @@
 #site-nav {
-    padding: 20px;
+    padding: 20px 0;
     position: absolute;
     width: 100%;
     z-index: 100;
@@ -10,6 +10,7 @@
         position: absolute;
         right: 0;
         width: 400px;
+        transition: .3s right ease, .3s transform ease;
     }
     .nav-links {
         font-size: 1.5em;
@@ -19,6 +20,23 @@
             transition: .3s color ease;
             &:hover {
                 color: $red;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #site-nav {
+        text-align: right;
+        .nav-container {
+            margin-right: 30px;
+            right: 50%;
+            transform: translateX(100%);
+        }
+        .nav-links {
+            margin-bottom: 10px;
+            a {
+                padding: 0 5px;
             }
         }
     }

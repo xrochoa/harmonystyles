@@ -1,6 +1,13 @@
 /* Small Desktop */
 
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+    .img-logo {
+        width: 250px;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-145%);
+    }
+}
 
 
 /* IPAD 768px x 1024px */
