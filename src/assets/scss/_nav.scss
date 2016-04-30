@@ -108,11 +108,11 @@
                 display: block;
                 padding: 20px 0 20px;
                 border-top: 1px solid rgba($white, 0.2);
-                border-bottom: 1px solid rgba($white, 0.2);
             }
         }
         .nav-social {
             padding: 50px 0 50px;
+            border-top: 1px solid rgba($white, 0.2);
         }
         &.is-active {
             .nav-container {
