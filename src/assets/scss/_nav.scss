@@ -6,38 +6,121 @@
     .container {
         position: relative;
     }
-    .nav-container {
-        position: absolute;
-        right: 0;
-        width: 400px;
-        transition: .3s right ease, .3s transform ease;
-    }
-    .nav-links {
-        font-size: 1.5em;
-        margin-bottom: 10px;
-        a {
-            padding: 0 10px;
-            transition: .3s color ease;
-            &:hover {
-                color: $red;
-            }
+}
+
+.nav-container {
+    position: absolute;
+    right: 0;
+    width: 400px;
+    transition: .3s right ease, .3s transform ease;
+}
+
+.nav-links {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    a {
+        padding: 0 10px;
+        transition: .3s color ease;
+        &:hover {
+            color: $red;
         }
+    }
+}
+
+.nav-burger {
+    width: 40px;
+    height: 40px;
+    border: 2px solid $white;
+    border-radius: 5px;
+    position: relative;
+    transition: .3s background ease;
+    box-shadow: 0 0 1px $black;
+    background: $black;
+    //desktop
+    display: none;
+    img {
+        position: absolute;
+        width: 30px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &:hover,
+    &.is-active {
+        background: $gray;
+        cursor: pointer;
     }
 }
 
 @media only screen and (max-width: 1200px) {
     #site-nav {
         text-align: right;
+    }
+    .nav-container {
+        margin-right: 30px;
+        right: 50%;
+        transform: translateX(100%);
+    }
+    .nav-links {
+        margin-bottom: 10px;
+        a {
+            padding: 0 5px;
+        }
+    }
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 768px) {
+    .nav-burger {
+        display: block;
+        position: fixed;
+        right: 0;
+        z-index: 1;
+        margin: 20px;
+    }
+    #site-nav {
+        padding: 0;
+        text-align: center;
+        position: fixed;
+        .container {
+            overflow: visible;
+            max-width: 100%;
+        }
         .nav-container {
-            margin-right: 30px;
-            right: 50%;
-            transform: translateX(100%);
+            background: $black;
+            height: 0;
+            width: 100%;
+            margin: 0;
+            overflow: hidden;
+            opacity: 0.95;
+            width: 100%;
+            left: 0;
+            top: 0;
+            transform: none;
+            z-index: 0;
+            transition: .3s height ease;
         }
         .nav-links {
-            margin-bottom: 10px;
+            padding-top: 85px;
             a {
-                padding: 0 5px;
+                display: block;
+                padding: 20px 0 20px;
+                border-top: 1px solid rgba($white, 0.2);
+                border-bottom: 1px solid rgba($white, 0.2);
             }
         }
+        .nav-social {
+            padding: 50px 0 50px;
+        }
+        &.is-active {
+            .nav-container {
+                height: 100vh;
+            }
+        }
+    }
+    body.is-active {
+        overflow: hidden;
     }
 }
