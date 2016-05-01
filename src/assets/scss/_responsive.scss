@@ -1,6 +1,6 @@
 /* Small Desktop to ipad */
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
     .img-logo {
         width: 250px;
         bottom: 40px;
@@ -12,7 +12,7 @@
 
 /* Mobile */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     #section-header {
         background: url(../img/cover.png) center calc(100% + 22vh) / auto 80vh no-repeat, $black;
         border: none;
@@ -87,8 +87,3 @@
         }
     }
 }
-
-
-/* Small Mobile > 320px */
-
-@media only screen and (max-width: 480px) {}
