@@ -52,6 +52,24 @@
     }
 }
 
+
+/* SUBPAGES LOGO FOR NAV */
+
+#section-subpage-logo {
+    background: $black;
+    text-align: left;
+    height: 120px;
+    transition: .3s height ease;
+    img {
+        width: 160px;
+        padding: 20px 50px;
+        transition: .3s transform ease;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     #site-nav {
         text-align: right;
@@ -122,5 +140,18 @@
     }
     body.is-active {
         overflow: hidden;
+    }
+    /* SUBPAGES LOGO FOR NAV */
+    #section-subpage-logo {
+        height: 85px;
+        img {
+            position: relative;
+            z-index: 101;
+            width: 140px;
+            padding: 10px 0;
+            &:hover {
+                transform: none;
+            }
+        }
     }
 }
