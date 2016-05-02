@@ -1,12 +1,14 @@
 /* Cover section */
 
 #section-cover {
+    display: none;
     padding-top: 60px;
     background: $white;
     img {
         width: 50%;
     }
 }
+
 
 /* Portfolio section */
 
@@ -32,7 +34,8 @@
         img {
             width: 100%;
         }
-        &:hover {
+        &:hover,
+        &.is-active {
             cursor: pointer;
             h2 {
                 opacity: 1;
