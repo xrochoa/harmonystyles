@@ -1,3 +1,12 @@
+/* Nav overwrite */
+
+#site-nav {
+    top: 455px;
+    right: 105px;
+    transition: .3s top ease, .3s right ease;
+}
+
+
 /* Header section */
 
 #section-header {

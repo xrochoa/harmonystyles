@@ -1,6 +1,11 @@
 /* Small Desktop to ipad */
 
 @media only screen and (max-width: 1199px) {
+    /* Nav overwrite */
+    #site-nav {
+        top: 475px;
+        right: 0;
+    }
     .img-logo {
         width: 250px;
         bottom: 40px;
@@ -13,6 +18,10 @@
 /* Mobile */
 
 @media only screen and (max-width: 767px) {
+    /* Nav overwrite */
+    #site-nav {
+        top: 0;
+    }
     #section-header {
         background: url(../img/cover.png) center calc(100% + 22vh) / auto 80vh no-repeat, $black;
         border: none;
