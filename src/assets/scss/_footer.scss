@@ -5,7 +5,7 @@
         display: block;
         width: 120px;
         @extend %center-block;
-        padding-bottom: 20px;
+        padding: 10px 0;
     }
     a {
         &:hover .icon {
