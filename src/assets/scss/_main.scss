@@ -146,23 +146,23 @@ cite {
         max-width: 100%;
         @extend %center-block;
         text-align: justify;
-        &:hover {
+/*         &:hover {
             .text-more {
                 opacity: 1;
                 left: 0;
             }
-        }
+        } */
     }
 }
 
-.text-more {
+/* .text-more {
     opacity: 0;
     position: relative;
     left: -100px;
     transition: .3s opacity ease, .3s left ease;
     text-align: center;
     height: 0;
-}
+} */
 
 .bg-parallax {
     position: fixed;
