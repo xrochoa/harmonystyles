@@ -1,6 +1,12 @@
 #site-footer {
     background: $black;
     padding: 20px 0 10px;
+    .logo-footer {
+        display: block;
+        width: 120px;
+        @extend %center-block;
+        padding-bottom: 20px;
+    }
     a {
         &:hover .icon {
             box-shadow: 0 0 0 3px $white;
@@ -14,7 +20,7 @@
     }
     .legal {
         margin-top: 20px;
-        padding-bottom: 20px;
+        //padding-bottom: 20px;
         text-align: center;
     }
 }

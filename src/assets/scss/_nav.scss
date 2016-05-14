@@ -57,12 +57,12 @@
 
 #section-subpage-logo {
     background: $black;
-    text-align: left;
+    //text-align: left;
     height: 120px;
     transition: .3s height ease;
     img {
-        width: 160px;
-        padding: 20px 50px;
+        width: 210px;
+        padding: 10px 50px;
         transition: .3s transform ease;
         &:hover {
             transform: scale(1.05);
