@@ -1,0 +1,47 @@
+#section-prices {
+    background: $white;
+    .container {
+        background: $red;
+    }
+    img {
+        padding: 30px 30px 0;
+        width: calc(100% - 60px);
+    }
+    text-align: left;
+    .pictures {
+        width: 40%;
+    }
+    .prices {
+        width: 60%;
+        padding-right: 30px;
+    }
+}
+
+
+/* LEADERS */
+
+ul.leaders {
+    max-width: 50em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none
+}
+
+ul.leaders li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+}
+
+ul.leaders span:first-child {
+    padding-right: 0.33em;
+    background: $red;
+    font-style: italic;
+}
+
+ul.leaders span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: $red;
+}
