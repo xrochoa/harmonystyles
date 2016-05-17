@@ -1,18 +1,64 @@
-/* Small Desktop */
+/* Small Desktop to ipad */
 
-@media only screen and (max-width: 1200px) {}
-
-
-/* IPAD 768px x 1024px */
-
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 1040px) {
+    #section-harmony {
+        .life {
+            font-size: 1em;
+            blockquote {
+                margin-top: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            cite {
+                margin-top: -10px;
+            }
+        }
+    }
+    #section-bio {
+        .container {
+            div {
+                padding: 50px;
+                font-size: 1em;
+            }
+        }
+    }
+}
 
 
 /* Mobile */
 
-@media only screen and (max-width: 768px) {}
-
-
-/* Small Mobile > 320px */
-
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 767px) {
+    #section-harmony {
+        .container {
+            max-width: 100%;
+        }
+        .harmony {
+            width: 100%;
+        }
+        .life {
+            blockquote {
+                margin: 20px;
+                margin-top: -50px;
+                position: static;
+                transform: none;
+            }
+            width: 100%;
+            height: auto;
+            padding-bottom: 0;
+            font-size: 0.9em;
+            cite {
+                padding: 0;
+            }
+        }
+    }
+    #section-bio {
+        .container {
+            div {
+                padding: 30px;
+                font-size: 0.9em;
+            }
+            max-width: 100%;
+        }
+    }
+}

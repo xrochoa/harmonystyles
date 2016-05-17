@@ -1,14 +1,14 @@
 body {
-    background: url(../../img/about/bg.jpg) center top / cover no-repeat fixed;
+    //background: url(../../img/about/bg.jpg) center top / cover no-repeat fixed;
 }
 
 
 /* section harmony */
 
 #section-harmony {
-    //background: $white;
+    background: $white;
     .line {
-        border-bottom: 30px solid rgba($white, 0.75);
+        border: 30px solid rgba($white, 0.75);
     }
     .harmony {
         width: 30%;
@@ -62,6 +62,7 @@ body {
 /* section bio */
 
 #section-bio {
+    background: url(../../img/about/bg.jpg) center top / cover no-repeat;
     .container {
         background: rgba($red, 0.75);
         div {
