@@ -4,19 +4,51 @@ var $images = $('#setion-portfolio .cell');
 var $imgCover = $('#img-cover');
 var $sectionCover = $('#section-cover');
 
-var types = ['blondes', 'brunettes', 'reds'];
+var $h2text = $('#setion-portfolio h2');
 
-$images.click(function() {
+var types = [];
 
-	$sectionCover.css('display', 'block');
+$h2text.each(function() {
 
-    var index = $images.index(this);
+    types.push($(this).text().toLowerCase());
 
-    $images.removeClass('is-active');
-    $(this).addClass('is-active');
-    $imgCover.css('opacity', 0)
-        .attr('src', '../assets/img/portfolio/' + types[index] + '.jpg')
-        .animate({'opacity': 1}, 'slow');
+});
+
+//console.log(types);
+
+/*initialize*/
+loadImage();
+
+
+/*hash change*/
+$(window).on('hashchange', loadImage);
+
+function loadImage() {
+
+    //console.log(location.hash);
+
+    if (types.indexOf(location.hash.substring(1)) === -1) {
+
+        $sectionCover.css('display', 'none');
+        $images.removeClass('is-active');
+
+    } else {
+
+        $sectionCover.css('display', 'block');
+
+        var index = types.indexOf(location.hash.substring(1));
+
+        //console.log(location.hash.substring(1));
+
+
+        $images.removeClass('is-active');
+
+        $('[href="' + location.hash + '"]').parent().addClass('is-active');
+
+        $imgCover.css('opacity', 0)
+            .attr('src', '../assets/img/portfolio/' + types[index] + '.jpg')
+            .animate({ 'opacity': 1 }, 'slow');
+    }
 
     scrollTo(0, 0);
-});
+}
